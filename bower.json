@@ -1,0 +1,18 @@
+{
+  "name": "cdp-header-widget",
+  "version": "0.1.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.yml",
+    "*.md",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "docs"
+  ],
+  "dependencies": {
+    "tupi": "0.1.61"
+  }
+}
