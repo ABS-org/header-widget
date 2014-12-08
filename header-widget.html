@@ -11,6 +11,66 @@
   <link rel="stylesheet" href="bower_components/tupi/css/header-widget.css">
 
   <link rel="stylesheet" href="bower_components/tupi/css/icon/tupi-icon.cdp.css">
+
+  <style type="text/css">
+  .dropdown-services {
+    width: 260px;
+    height: 72px;
+    position: absolute;
+    top: 3px;
+    left: 80px;
+  }
+  .dropdown-services li {
+    height: 50px;
+    float: left;
+    text-align: center;
+  }
+  .dropdown-services li.style_courses,
+  .dropdown-services li.style_blog,
+  .dropdown-services li.style_help {
+    margin-top: 5px;
+  }
+  .dropdown-services li a {
+    height: 50px;
+    padding: 5px 0;
+  }
+  .dropdown-services li a .cdp-badge {
+    font-size: 1.7em;
+  }
+  .dropdown-services li a .cdp-chat {
+    font-size: 1.55em;
+  }
+  .dropdown-services li a .cdp-question {
+    font-size: 1.7em;
+  }
+  .dropdown-services li a .text {
+    font-size: 10px;
+  }
+  .arrow_box-menu-services::after,
+  .arrow_box-menu-services::before {
+    right: 100%;
+    top: 45%;
+    left: -24px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .arrow_box-menu-services::after {
+    border-color: rgba(245, 245, 245, 0);
+    border-right-color: #f9f9f9;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  .arrow_box-menu-services::before {
+    border-color: rgba(204, 204, 204, 0);
+    border-right-color: #999;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  </style>
 </head>
 <body>
 
@@ -215,7 +275,7 @@
           </li>
 
           <li class="main_menu-dropdown logged-on dropdown">
-            <button class="btn btn-default dropdown-toggle user-menu-link" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle user-menu-link">
               <span class="user-name"><a target="_parent" href="http://atencaobasica.org.br/user/">Acessar meu perfil</a></span>
             </button>
 
@@ -249,5 +309,7 @@
       </div>
     </nav>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/bootstrap.min.js"></script>
   </body>
   </html>
