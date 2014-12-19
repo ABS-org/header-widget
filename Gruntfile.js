@@ -19,7 +19,6 @@ module.exports = function(grunt) {
       widget: {
         options: {
           port: 8082,
-          hostname: '*',
           base: '.'
         }
       }
@@ -77,6 +76,13 @@ module.exports = function(grunt) {
       less: {
         files: ["src/less/**/*.less"],
         tasks: ["less"]
+      },
+      templates: {
+        files: ["src/templates/*.html"],
+        tasks: ["dist"],
+        options: {
+          livereload: true,
+        }
       },
       translate: {
         files: ["src/i18n.yml"],
